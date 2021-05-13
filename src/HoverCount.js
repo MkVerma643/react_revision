@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import UpdatedComponent from "./WithCounterHOC"
+import WithCounterHOC from "./WithCounterHOC"
 
 
 class HoverCount extends Component {
     render() {
-        const {count, incrementCount}=this.props
+        const {count, incrementCount}=this.props;
         return (
             <div>
                 <h1 onMouseOver={incrementCount}>Hovered {count} times</h1>
@@ -13,4 +13,4 @@ class HoverCount extends Component {
     }
 }
 
-export default UpdatedComponent(HoverCount)
+export default WithCounterHOC(HoverCount)

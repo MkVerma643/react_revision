@@ -15,6 +15,7 @@ import Header from './Header';
 import AxiosList from './AxiosList';
 import ClickCounter from './ClickCounter';
 import HoverCount from './HoverCount';
+import WithCounterHOC from './WithCounterHOC';
 
 function App() {
   let full_name="Mukesh Verma"
@@ -40,7 +41,7 @@ function App() {
       <User alert={GetDataFromUser}></User> */}
       {/* <Promises></Promises> */}
       {/* <AsyncAwait></AsyncAwait> */}
-
+      
 
       <BrowserRouter>
         <Header></Header>
@@ -59,6 +60,7 @@ function App() {
           <Route path="/Promises" component={Promises} />
           <Route path="/AsyncAwait" component={AsyncAwait} />
           <Route path="/AxiosList" component={AxiosList} />
+          <Route path="/WithCounterHOC" component={WithCounterHOC} />
           <Route path="/ClickCounter" component={ClickCounter} />
           <Route path="/HoverCount" component={HoverCount} />
 
